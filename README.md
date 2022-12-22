@@ -1,5 +1,5 @@
 <div align="center">
-    <h1>TS Starter</h1>
+    <h1>TypeScript Starter</h1>
     <h3>Starter template for TypeScript library</h3>
 </div>
 
