@@ -37,29 +37,29 @@
   "devDependencies": {
     "@commitlint/cli": "^17.3.0",
     "@commitlint/config-conventional": "^17.3.0",
-    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.48.0",
     "commitizen": "^4.2.6",
     "compare-func": "^2.0.0",
     "conventional-changelog": "^3.1.25",
     "conventional-changelog-cli": "^2.2.2",
     "conventional-changelog-custom-config": "^0.3.1",
     "cz-conventional-changelog": "^3.3.0",
-    "eslint": "^8.0.1",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-config-standard-with-typescript": "^23.0.0",
-    "eslint-plugin-import": "^2.25.2",
-    "eslint-plugin-n": "^15.0.0",
+    "eslint": "^8.31.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-config-standard-with-typescript": "^25.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.6.0",
     "eslint-plugin-prettier": "^4.2.1",
-    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-promise": "^6.1.1",
     "esno": "^0.16.3",
-    "husky": "^8.0.0",
+    "husky": "^8.0.2",
     "lint-staged": "^13.1.0",
     "nodemon": "^2.0.20",
     "prettier": "^2.8.1",
-    "release-it": "^15.5.1",
-    "typescript": "*",
+    "release-it": "^15.6.0",
+    "typescript": "^4.9.4",
     "unbuild": "^1.0.2",
-    "vitest": "^0.25.7"
+    "vitest": "^0.26.3"
   },
   "lint-staged": {
     "core/**/*.ts": [
@@ -79,5 +79,8 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/flingyp"
+  },
+  "dependencies": {
+    "@flypeng/tool": "5.0.0-1"
   }
 }
