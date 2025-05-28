@@ -1,0 +1,45 @@
+{
+  "name": "pag-name",
+  "description": "Starter template for TypeScript library",
+  "type": "module",
+  "version": "0.0.0",
+  "author": "flingyp",
+  "license": "MIT",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=dev tsup --watch",
+    "build": "cross-env NODE_ENV=build tsup"
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "types": "./dist/index.d.ts",
+  "keywords": [
+    "typescript",
+    "libarary",
+    "template"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/flingyp"
+  },
+  "devDependencies": {
+    "@flypeng/eslint-config": "^2.0.3",
+    "cross-env": "^7.0.3",
+    "nodemon": "^3.1.10",
+    "tsup": "^8.5.0",
+    "typescript": "^5.8.3",
+    "vitest": "^3.1.4"
+  },
+  "dependencies": {
+    "@flypeng/tool": "^5.7.0"
+  }
+}
