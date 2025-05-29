@@ -1,4 +1,5 @@
 {
+  "type": "module",
   "scripts": {
     "dev": "pnpm --filter pag-name dev",
     "build": "pnpm --filter pag-name build",
@@ -27,8 +28,7 @@
     "husky": "^9.1.7",
     "lint-staged": "^13.3.0",
     "release-it": "^19.0.2",
-    "typescript": "^5.8.3",
-    "vitest": "^3.1.4"
+    "typescript": "^5.8.3"
   },
   "lint-staged": {
     "core/**/*.ts": [
