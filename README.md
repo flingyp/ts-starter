@@ -63,8 +63,8 @@ The project uses pnpm workspace for monorepo management. The workspace is config
 
 ```yaml
 packages:
-  - "core"
-  - "example"
+  - 'core'
+  - 'example'
 ```
 
 ## License

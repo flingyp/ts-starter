@@ -5,45 +5,33 @@
     "build": "pnpm --filter pag-name build",
     "example:dev": "pnpm --filter example dev",
     "example:build": "pnpm --filter example build",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
-    "changelog": "conventional-changelog -p custom-config -i CHANGELOG.md -s -n ./changelog.options.js && git add CHANGELOG.md",
+    "lint": "prettier . --write && eslint .",
+    "lint:fix": "prettier . --write && eslint . --fix",
     "prepare": "husky install",
     "commit": "git-cz",
-    "release": "release-it"
+    "changeset": "npx changeset && npx changeset version",
+    "release": "pnpm run build && pnpm publish -r --access public"
   },
   "author": "flingyp",
   "devDependencies": {
+    "@changesets/cli": "^2.29.5",
     "@commitlint/cli": "^19.8.1",
     "@commitlint/config-conventional": "^19.8.1",
-    "@flypeng/eslint-config": "^2.0.3",
-    "@types/node": "^22.15.23",
+    "@flypeng/eslint-config": "^3.0.1",
+    "@prettier/plugin-oxc": "^0.0.4",
+    "@types/node": "^22.16.5",
     "commitizen": "^4.3.1",
     "compare-func": "^2.0.0",
-    "conventional-changelog": "^7.0.2",
-    "conventional-changelog-cli": "^5.0.0",
-    "conventional-changelog-custom-config": "^0.3.1",
-    "cz-conventional-changelog": "^3.3.0",
-    "eslint": "^9.27.0",
+    "eslint": "^9.31.0",
     "husky": "^9.1.7",
     "lint-staged": "^13.3.0",
-    "release-it": "^19.0.2",
+    "prettier": "^3.6.2",
     "typescript": "^5.8.3"
   },
   "lint-staged": {
     "core/**/*.ts": [
       "pnpm run lint"
     ]
-  },
-  "config": {
-    "commitizen": {
-      "path": "cz-conventional-changelog"
-    }
-  },
-  "release-it": {
-    "github": {
-      "release": true
-    }
   },
   "repository": {
     "type": "git",

@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import HelloWorld from "./components/HelloWorld.vue";
-import { sum } from "pag-name";
-console.log("sum:", sum);
+import HelloWorld from './components/HelloWorld.vue';
+import { sum } from 'pag-name';
+console.log('sum:', sum);
 </script>
 
 <template>
