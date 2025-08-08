@@ -1,9 +1,4 @@
-import init from '@flypeng/eslint-config';
+import flypeng from '@flypeng/eslint-config';
 
 /** @type {import('eslint').Linter.Config[]} */
-export default [
-    ...init(),
-    {
-        ignores: ['core/dist'],
-    },
-];
+export default [...flypeng()];

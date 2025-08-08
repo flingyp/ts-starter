@@ -1,19 +1,10 @@
-import { Options, defineConfig } from 'tsup';
-
-const currentNodeEnv = process.env.NODE_ENV;
-const isProd = currentNodeEnv === 'build';
-
-const commonConfig: Options = {
-  minify: isProd,
-  sourcemap: !isProd,
-  shims: true,
-  clean: true,
-  dts: true,
-};
+import { defineConfig } from 'tsup';
 
 export default defineConfig({
   format: ['esm', 'cjs', 'iife'],
   entry: ['./index.ts'],
   outDir: './dist',
-  ...commonConfig,
+  shims: true,
+  clean: true,
+  dts: true,
 });

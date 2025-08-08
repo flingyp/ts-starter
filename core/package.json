@@ -6,8 +6,8 @@
   "author": "flingyp",
   "license": "MIT",
   "scripts": {
-    "dev": "cross-env NODE_ENV=dev tsup --watch",
-    "build": "cross-env NODE_ENV=build tsup"
+    "dev": "tsup --watch --sourcemap",
+    "build": "tsup --minify"
   },
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -24,7 +24,7 @@
   "types": "./dist/index.d.ts",
   "keywords": [
     "typescript",
-    "libarary",
+    "library",
     "template"
   ],
   "repository": {
@@ -32,14 +32,6 @@
     "url": "https://github.com/flingyp"
   },
   "devDependencies": {
-    "@flypeng/eslint-config": "^2.0.3",
-    "cross-env": "^7.0.3",
-    "nodemon": "^3.1.10",
-    "tsup": "^8.5.0",
-    "typescript": "^5.8.3",
-    "vitest": "^3.1.4"
-  },
-  "dependencies": {
-    "@flypeng/tool": "^5.7.0"
+    "tsup": "^8.5.0"
   }
 }
